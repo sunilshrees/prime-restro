@@ -51,7 +51,9 @@ function GetInTouch() {
                                 </div>
                             </div>
                         </div>
-                        <form className='contact-form'>
+                        <form
+                            className='contact-form'
+                            onSubmit={(e) => e.preventDefault()}>
                             <h1>Make a Reservation</h1>
                             <input type='text' placeholder='Name' />
                             <input type='text' placeholder='Email' />
